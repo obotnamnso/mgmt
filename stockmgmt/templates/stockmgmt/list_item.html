@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{title}}</title>
+    </head>
+    <body>
+       <h1>Welcome, to Our Item List page!</h1>
+       {% for instance in queryset %}
+            {{instance.item_name}}, {{instance.quantity}}<br>
+       {% endfor %}
+    </body>
+</html>
