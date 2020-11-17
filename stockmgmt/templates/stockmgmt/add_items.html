@@ -4,6 +4,9 @@
         <title> {{title}}</title>
     </head>
     <body>
-       <h1>Welcome, to Our Add Item page!</h1>
+       <form method="POST" action="">{% csrf_token %}
+           {{form}}
+           <input type="submit" value="Save"/>
+       </form>
     </body>
 </html>
