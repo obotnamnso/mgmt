@@ -11,10 +11,10 @@ def home(request):
     return render(request, "stockmgmt/home.html", context)
 
 def list_items(request):
-    title = "List Item"
+    header = "LIST OF PRODUCTS"
     queryset = Stock.objects.all()
     context = {
-        "title": title,
+        "header": header,
         "queryset": queryset
     }
     return render(request, "stockmgmt/list_items.html", context)
